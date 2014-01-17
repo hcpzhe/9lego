@@ -1,5 +1,5 @@
 @CHARSET "UTF-8";
-body,html {color: #555;padding: 0; margin: 0; font-family: 雅黑; font-size: 12px;}
+body,html {color: #555;padding: 0; margin: 0; font-family: 雅黑; font-size: 12px; background: url(images/bodybg.png) repeat;}
 div {display: block;}
 
 .cl {clear: both;}
@@ -14,9 +14,11 @@ div {display: block;}
 
 
 .tophead_wrap {height: 30px; background: #F2EEEF;border-bottom: 1px solid #EEECED; line-height: 30px;}
-.toptel {background: url(images/common_bg.gif) 0 -153px no-repeat; padding-left: 14px;height: 17px;line-height: 17px;overflow: hidden;margin:5px 10px 0 0;}
+.toptel {background: url(images/common_bg.gif) 0 -152px no-repeat; padding-left: 14px;height: 17px;line-height: 17px;overflow: hidden;margin:5px 10px 0 0;}
 .toptelstyle {color: #C00;font-family: Arial, Helvetica, sans-serif;font-size: 14px;}
 
-.topmain_wrap {height: 78px; padding: 20px 0;}
-.topsearch {background: url(images/search.jpg);width: 464px; height: 42px; margin: 15px 0 0 80px;}
-.topjpg {margin-right: 30px;}
+.topmain_wrap {height: 78px; padding: 20px 0; background: #fff}
+.topsearch {background: url(images/search.jpg);width: 464px; height: 42px; margin: 15px 0 0 30px;}
+.searchbtn {color:#fff; font-size:18px; padding: 10px 40px 0 0; font-weight: bold;}
+
+.nav_wrap {height: 40px; background: url(images/menu_bg.gif) repeat-x;}
