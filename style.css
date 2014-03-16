@@ -51,10 +51,20 @@ div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, 
 			.abslt-navlist li p {clear: both; margin: 10px auto; width: 180px; overflow: hidden;}
 				.abslt-navlist li p a {padding: 0 5px;}
 
-
 .banner_wrap {width: 992px; padding-left: 208px; margin: 0 auto; }
 	.banner_wrap img { margin-top:-2px;}
 	@-moz-document url-prefix(){.banner_wrap img {margin-top:-1px;}}
+
+.ban_wrap {height: 400px;}
+	.idxban-left {float: left; width: 208px;}
+		.catetree-list {width: 208px; height: 400px; background: #fff;}
+			.catetree-list li h3 {width: 185px;padding-left: 20px;margin: 0;text-align: left;height: 25px;line-height: 25px;font-size: 14px;font-family: "微软雅黑";color: #333;}
+				.catetree-list li h3 span {width: 18px;font-weight: 500;font-size: 12px;float: right;font-family: "新宋体";}
+			.catetree-list li p {clear: both; margin: 10px auto; width: 180px; overflow: hidden;}
+				.catetree-list li p a {padding: 0 5px;}
+	.idxban-right {float: right; width: 992px;}
+		.ban_wrap img { margin-top:-2px;}
+		@-moz-document url-prefix(){.ban_wrap img {margin-top:-1px;}}
 
 
 .idxmid-left {float: left; width: 208px;}
