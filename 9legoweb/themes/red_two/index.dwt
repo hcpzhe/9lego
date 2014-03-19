@@ -311,9 +311,6 @@ $(function($) {
 </script>
 {/literal}
 
-<!-- #BeginLibraryItem "/library/help.lbi" --><!-- #EndLibraryItem -->
- 
-
 <!-- #BeginLibraryItem "/library/page_footer.lbi" --><!-- #EndLibraryItem -->
 </body>
 </html>

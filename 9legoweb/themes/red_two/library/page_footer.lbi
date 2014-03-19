@@ -39,7 +39,7 @@
   
 </div>
 <div id="footer">
-  <div class="ft_footer_service"> <a target="_blank" href="#"><span class="s1"></span>全国包邮</a> <a target="_blank" href="#"><span class="s2"></span>正品保障</a> <a target="_blank" href="#"><span class="s3"></span>售后无忧</a> </div>
+  <div class="ft_footer_service"> <a target="_blank" href="#"><span class="s1"></span>全场包邮</a> <a target="_blank" href="#"><span class="s2"></span>正品保障</a> <a target="_blank" href="#"><span class="s3"></span>售后无忧</a> </div>
   <!--底部导航 start-->
   <p class="ft_footer_link"> 
     <!-- {if $navigator_list} --> 
