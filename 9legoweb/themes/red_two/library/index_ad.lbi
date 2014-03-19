@@ -3,11 +3,11 @@
 <style type="text/css"> 
 .container, .container *{margin:0; padding:0;}
 
-.container{width:994px; height:410px; overflow:hidden;position:relative;}
+.container{width:992px; height:400px; overflow:hidden;position:relative;}
 
 .slider{position:absolute;}
 .slider li{ list-style:none;display:inline;}
-.slider img{ width:994px; height:410px; display:block;}
+.slider img{ width:992px; height:400px; display:block;}
 
 .slider2{width:2000px;}
 .slider2 li{float:left;}
@@ -43,7 +43,7 @@
 <div class="container" id="idTransformView">
   <ul class="slider" id="idSlider">
   <!--{foreach from=$flash name=no item=flash}-->
-    <li><a href="{$flash.url}" target="_blank"><img src="{$flash.src}"/></li>
+    <li><a href="{$flash.url}" target="_blank"><img src="{$flash.src}"/></a></li>
     <!--{/foreach}-->
   </ul>
   <ul class="num" id="idNum">
@@ -59,9 +59,6 @@
 </div>
 
 <script type="text/javascript">
-var $ = function (id) {
-	return "string" == typeof id ? document.getElementById(id) : id;
-};
 
 var Class = {
   create: function() {
@@ -83,7 +80,7 @@ TransformView.prototype = {
   //容器对象,滑动对象,切换参数,切换数量
   initialize: function(container, slider, parameter, count, options) {
 	if(parameter <= 0 || count <= 0) return;
-	var oContainer = $(container), oSlider = $(slider), oThis = this;
+	var oContainer = $$(container), oSlider = $$(slider), oThis = this;
 
 	this.Index = 0;//当前索引
 	
@@ -165,9 +162,9 @@ window.onload=function(){
 		for (var i = 0, len = list.length; i < len; i++) { fun(list[i], i); }
 	};
 	
-	var objs = $("idNum").getElementsByTagName("li");
+	var objs = $$("idNum").getElementsByTagName("li");
 	
-	var tv = new TransformView("idTransformView", "idSlider", 410, 3, {
+	var tv = new TransformView("idTransformView", "idSlider", 400, 3, {
 		onStart : function(){ Each(objs, function(o, i){ o.className = tv.Index == i ? "on" : ""; }) }//按钮样式
 	});
 	
@@ -188,8 +185,8 @@ window.onload=function(){
 	})
 	
 	////////////////////////test2
-	
-	var objs2 = $("idNum2").getElementsByTagName("li");
+	/*
+	var objs2 = $$("idNum2").getElementsByTagName("li");
 	
 	var tv2 = new TransformView("idTransformView2", "idSlider2", 994, 3, {
 		onStart: function(){ Each(objs2, function(o, i){ o.className = tv2.Index == i ? "on" : ""; }) },//按钮样式
@@ -212,28 +209,21 @@ window.onload=function(){
 		}
 	})
 	
-	$("idStop").onclick = function(){ tv2.Auto = false; tv2.Stop(); }
-	$("idStart").onclick = function(){ tv2.Auto = true; tv2.Start(); }
-	$("idNext").onclick = function(){ tv2.Index++; tv2.Start(); }
-	$("idPre").onclick = function(){ tv2.Index--;tv2.Start(); }
-	$("idFast").onclick = function(){ if(--tv2.Step <= 0){tv2.Step = 1;} }
-	$("idSlow").onclick = function(){ if(++tv2.Step >= 10){tv2.Step = 10;} }
-	$("idReduce").onclick = function(){ tv2.Pause-=1000; if(tv2.Pause <= 0){tv2.Pause = 0;} }
-	$("idAdd").onclick = function(){ tv2.Pause+=1000; if(tv2.Pause >= 5000){tv2.Pause = 5000;} }
+	$$("idStop").onclick = function(){ tv2.Auto = false; tv2.Stop(); }
+	$$("idStart").onclick = function(){ tv2.Auto = true; tv2.Start(); }
+	$$("idNext").onclick = function(){ tv2.Index++; tv2.Start(); }
+	$$("idPre").onclick = function(){ tv2.Index--;tv2.Start(); }
+	$$("idFast").onclick = function(){ if(--tv2.Step <= 0){tv2.Step = 1;} }
+	$$("idSlow").onclick = function(){ if(++tv2.Step >= 10){tv2.Step = 10;} }
+	$$("idReduce").onclick = function(){ tv2.Pause-=1000; if(tv2.Pause <= 0){tv2.Pause = 0;} }
+	$$("idAdd").onclick = function(){ tv2.Pause+=1000; if(tv2.Pause >= 5000){tv2.Pause = 5000;} }
 	
-	$("idReset").onclick = function(){
+	$$("idReset").onclick = function(){
 		tv2.Step = Math.abs(tv2.options.Step);
 		tv2.Time = Math.abs(tv2.options.Time);
 		tv2.Auto = !!tv2.options.Auto;
 		tv2.Pause = Math.abs(tv2.options.Pause);
 	}
-	
+	*/
 }
 </script>
- 
- 
- 
- 
- 
- <div class="blank5"></div>
-<div class="blank"></div>

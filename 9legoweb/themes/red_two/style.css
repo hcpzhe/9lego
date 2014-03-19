@@ -119,7 +119,7 @@ color: #E60012; font-weight:bold }
   }
   h3.border{border:1px solid #e2e2e2; border-bottom:none;}
   h3 img{position:relative; top:7px;}
-  h3 span{float:left; font-size:14px; height:32px; line-height:32px; text-align:left;
+/*  h3 span{float:left; font-size:14px; height:32px; line-height:32px; text-align:left;*/
    font-weight:bold; color:#333; padding-left:5px;  font-family:"微软雅黑"}
    h3 a{ color:#333; text-decoration:none; font-family:"微软雅黑"}
   h5{height:26px; line-height:26px; text-align:right; background-color:#f6f6f6; font-size:12px;
@@ -1938,6 +1938,8 @@ opacity: 0.7;
 
 /************************************************************************/
 
+.tit_more {float:right; padding-right:20px; height:28px; line-height:28px; background:url(images/biao17.gif) right center no-repeat}
+
 .tophead_wrap {height: 30px; background: #F2EEEF;border-bottom: 1px solid #EEECED; line-height: 30px;}
 	.toptel {background: url(images/common_bg.gif) 0 -152px no-repeat; padding-left: 14px;height: 17px;line-height: 17px;overflow: hidden;margin:5px 10px 0 0;}
 	.toptelstyle {color: #C00;font-family: Arial, Helvetica, sans-serif;font-size: 14px;font-style: italic}
@@ -1973,13 +1975,12 @@ opacity: 0.7;
 .ban_wrap {height: 400px;}
 	.idxban-left {float: left; width: 208px;}
 		.catetree-list {width: 208px; height: 400px; background: #fff;}
-			.catetree-list li h3 {width: 185px;padding:0 0 0 20px;margin: 0;text-align: left;height: 25px;line-height: 25px;font-size: 14px;font-family: "微软雅黑";color: #333;}
+			.catetree-list li h3 {width: 188px;padding:0 0 0 20px;margin: 0;text-align: left;height: 25px;line-height: 25px;font-size: 14px;font-family: "微软雅黑";color: #333;}
 				.catetree-list li h3 span {width: 18px;font-weight: 500;font-size: 12px;float: right;font-family: "新宋体";}
 			.catetree-list li p {clear: both; margin: 10px auto; width: 180px; overflow: hidden;}
 				.catetree-list li p a {padding: 0 5px;}
-	.idxban-right {float: right; width: 992px;}
-		.ban_wrap img { margin-top:-2px;}
-		@-moz-document url-prefix(){.ban_wrap img {margin-top:-1px;}}
+	.idxban-right {float: right; width: 992px; margin-top:-2px;}
+	@-moz-document url-prefix(){.idxban-right {margin-top:-1px;}}
 
 
 .idxmid-left {float: left; width: 208px;}
@@ -2011,6 +2012,7 @@ opacity: 0.7;
 			.gl-p-l {color: #D70000; float: left;}
 				.gl-p-l b {font-size: 18px;}
 			.gl-p-r {color: #999; float: right;}
+		
 
 .fullbox {background: #fff;}
 	.brand-tit {background: #EFEFEF url('images/star.png') 8px 3px no-repeat; padding-left: 35px;}
@@ -2019,9 +2021,13 @@ opacity: 0.7;
 		.catebox-l {width: 220px; height:287px; float: left;}
 			.catebox-l img {width: 220px; height: 287px;}
 		.catebox-r {width: 980px; height: 287px; float: right;}
-	.brand-box-dl {height: 272px; width: 1200px; overflow: hidden;}
-		.brand-box-dl dl {width: 240px;height: 272px;float: left;}
+	.brand-box-dl {width: 1200px; overflow: hidden;}
+		.brand-box-dl dl {float: left;}
 			.brand-box-dl dl dt {padding: 10px 9px 10px 10px;width: 220px;height: 110px;display: block;border-bottom: 1px solid #EBEBE8;border-right: 1px solid #EBEBE8;}
+		.bxdl-list {}
+			.bxdl-list a {width: 100px;height: 50px;float: left;border-bottom: 1px solid #EBEBE8;border-right: 1px solid #EBEBE8;padding: 10px 9px 10px 10px;}
+			.bxdl-list a span {width:100px;height:50px;position:absolute;z-index:10;top:10px;left:10px;background:#c63f4e;opacity:0.8;filter:Alpha(opacity=80);color:#fff;line-height:50px;text-align:center;}
+			
 			.brand-box-dl dl dd {width: 240px;height: 140px;display: block;}
 				.brand-box-dl dl dd a {width: 100px;height: 50px;float: left;border-bottom: 1px solid #EBEBE8;border-right: 1px solid #EBEBE8;padding: 10px 9px 10px 10px;}
 					.brand-box-dl dl dd a span{width:100px;height:50px;position:absolute;z-index:10;top:10px;left:10px;background:#c63f4e;opacity:0.8;filter:Alpha(opacity=80);color:#fff;line-height:50px;text-align:center;}

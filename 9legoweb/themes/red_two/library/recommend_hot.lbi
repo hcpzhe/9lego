@@ -1,35 +1,39 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!-- 热卖商品 -->
 <!-- {if $hot_goods} -->
-<!-- {if $cat_rec_sign neq 1} -->
-<div class="xm-box">
-<h4 class="title"><span>热卖商品</span> <a class="more" href="../search.php?intro=hot">更多</a></h4>
-<div class="blank"></div>
-<div id="show_hot_area" class="clearfix">
-  <!-- {/if} -->
-  <!--{foreach from=$hot_goods item=goods}-->
-  <div class="goodsItem">
-       
-           <a href="{$goods.url}"><img src="{$goods.thumb}" alt="{$goods.name|escape:html}" class="goodsimg" /></a><br />
-           <p class="f1"><a href="{$goods.url}" title="{$goods.name|escape:html}">{$goods.short_style_name}</a></p>
-           
-           
- 市场价：<font class="market">{$goods.market_price}</font> <br/>
-      
-           本店价：<font class="f1">
-           <!-- {if $goods.promote_price neq ""} -->
-          {$goods.promote_price}
-          <!-- {else}-->
-          {$goods.shop_price}
-          <!--{/if}-->
-           </font>      
-		    
-        </div>
-  <!--{/foreach}-->
- 
-  <!-- {if $cat_rec_sign neq 1} -->
-  </div>
-
-</div>
-<div class="blank"></div>
-  <!-- {/if} -->
+	<!-- {if $cat_rec_sign neq 1} -->
+			<div class="right-box box-border mt8">
+				<div class="right-box-tit">
+					<h2>{$lang.hot_goods}</h2>
+					<a class="tit_more" href="../search.php?intro=hot">更多</a>
+				</div>
+				<div class="right-box-dl">
+					<ul class="goodslist">
+						<!--{foreach from=$hot_goods item=goods}-->
+						<li>
+							<div class="gl-img">
+								<a href="{$goods.url}">
+									<b class="gl-water">热销</b>
+									<img style="border:none;" src="{$goods.thumb}" alt="{$goods.name|escape:html}">
+								</a>
+							</div>
+							<div class="gl-name-p">
+								<div class="gl-name"><a href="{$goods.url}" title="{$goods.name|escape:html}">{$goods.name|escape:html}</a></div>
+								<div class="gl-price">
+									<span class="gl-p-l"><b>
+									<!-- {if $goods.promote_price neq ""} -->
+									{$goods.promote_price}
+									<!-- {else}-->
+									{$goods.shop_price}
+									<!--{/if}-->
+									</b></span>
+									<span class="gl-p-r"><del>{$goods.market_price}</del></span>
+								</div>
+							</div>
+						</li>
+						<!--{/foreach}-->
+					</ul>
+				</div>
+			</div>
+	<!-- {/if} -->
 <!-- {/if} -->
