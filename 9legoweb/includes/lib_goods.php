@@ -769,7 +769,7 @@ function assign_cat_goods($cat_id, $num = 0, $from = 'web', $order_rule = '')
     }
     $res = $GLOBALS['db']->getAll($sql);
 
-    $goods = array();
+    $goods = array(); $promote_price = 0;
     foreach ($res AS $idx => $row)
     {
         if ($row['promote_price'] > 0)
@@ -781,7 +781,11 @@ function assign_cat_goods($cat_id, $num = 0, $from = 'web', $order_rule = '')
         {
             $goods[$idx]['promote_price'] = '';
         }
-
+		/*******计算折扣率************************************************************************/
+		$tmp_p = $promote_price > 0 ? $promote_price : $row['shop_price'];
+		@$goods[$idx]['discount_rate'] = floor($tmp_p*100/$row['market_price'])/10;
+		/****************************************************************************************/
+		
         $goods[$idx]['id']           = $row['goods_id'];
         $goods[$idx]['name']         = $row['goods_name'];
         $goods[$idx]['brief']        = $row['goods_brief'];
