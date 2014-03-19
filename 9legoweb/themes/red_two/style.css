@@ -345,7 +345,7 @@ font-size: 14px; font-weight:bold}
 	line-height: 35px;
 	font-weight: normal;
 	color: #fff;
-	background:#E60012;
+	background:#B31D06;
 	text-indent:20px;
 	font-size:14px;
 }
@@ -671,7 +671,7 @@ border: solid 1px #e4e4e4;
     /*属性组合搜索*/
 			.screeBox{padding:10px;}
 		.screeBox a{color:#404040;}
-		.screeBox span{background:#E60012; color:#FFFFFF; padding:3px 5px; margin:0 3px;}
+		.screeBox span{background:#B31D06; color:#FFFFFF; padding:3px 5px; margin:0 3px;}
 		
     .sort a{ position:relative; bottom:5px;}
     .sort input{position:relative; top:3px;}
@@ -1937,7 +1937,7 @@ opacity: 0.7;
 
 
 /************************************************************************/
-
+#footer {padding-top: 20px;}
 .tit_more {float:right; padding-right:20px; height:28px; line-height:28px; background:url(images/biao17.gif) right center no-repeat}
 
 .tophead_wrap {height: 30px; background: #F2EEEF;border-bottom: 1px solid #EEECED; line-height: 30px;}
