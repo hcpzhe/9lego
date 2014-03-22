@@ -8,7 +8,7 @@ document.write("<ul>");
 
 document.write("<li class=odd><a href='http://wpa.qq.com/msgrd?V=1&amp;Uin=123456&amp;Site=QQ咨询&amp;Menu=yes' target='_blank'><img src=' http://wpa.qq.com/pa?p=1:123456:4'  border='0' alt='QQ' />QQ咨询</a></li>");
 
-document.write('<li><img src="../qq/themes/ecmoban_yhd/qq/images/msn.gif" width="18" height="17" border="0" alt="MSN" /> <a href="msnim:chat?contact=MSN帐号">MSN咨询</a></li>');
+document.write('<li><img src="../qq/themes/red_two/qq/images/msn.gif" width="18" height="17" border="0" alt="MSN" /> <a href="msnim:chat?contact=MSN帐号">MSN咨询</a></li>');
 
 document.write('<li><a href="http://amos1.taobao.com/msg.ww?v=2&uid=旺旺号码&s=2" target="_blank"><img src="http://amos1.taobao.com/online.ww?v=2&uid=旺旺号码&s=2" width="16" height="16" border="0" alt="淘宝旺旺" />在线旺旺</a></li>');
 
@@ -23,7 +23,7 @@ document.write("<div class='b'></div>");
 
 document.write("</div>");
 
-document.write("<div id='divMenu' onmouseover='OnlineOver();'><img src='../qq/themes/ecmoban_yhd/qq/images/qq_1.gif' class='press' alt='在线咨询'></div>");
+document.write("<div id='divMenu' onmouseover='OnlineOver();'><img src='../qq/themes/red_two/qq/images/qq_1.gif' class='press' alt='在线咨询'></div>");
 
 document.write("</div>");
 
