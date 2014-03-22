@@ -373,8 +373,8 @@ if (!$smarty->is_cached('category.dwt', $cache_id))
 							}
 						}
 					}
+                	$attr_list = $tmp_sort_use_arr;
                 }
-                $attr_list = $tmp_sort_use_arr;
                 /*************************************/
                 
                 foreach ($attr_list as $k => $v)
@@ -603,6 +603,10 @@ function category_get_goods($children, $brand, $min, $max, $ext, $size, $page, $
         $arr[$row['goods_id']]['goods_thumb']      = get_image_path($row['goods_id'], $row['goods_thumb'], true);
         $arr[$row['goods_id']]['goods_img']        = get_image_path($row['goods_id'], $row['goods_img']);
         $arr[$row['goods_id']]['url']              = build_uri('goods', array('gid'=>$row['goods_id']), $row['goods_name']);
+		/*******计算折扣率************************************************************************/
+		$tmp_p = $promote_price > 0 ? $promote_price : $row['shop_price'];
+		@$arr[$row['goods_id']]['discount_rate'] = floor($tmp_p*100/$row['market_price'])/10;
+		/****************************************************************************************/
     }
 
     return $arr;
