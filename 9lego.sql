@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50524
 File Encoding         : 65001
 
-Date: 2014-03-22 16:42:14
+Date: 2014-03-24 16:52:54
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -58,7 +58,7 @@ CREATE TABLE `lego_ad` (
   PRIMARY KEY (`ad_id`),
   KEY `position_id` (`position_id`),
   KEY `enabled` (`enabled`)
-) ENGINE=MyISAM AUTO_INCREMENT=10 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=11 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of lego_ad
@@ -71,7 +71,8 @@ INSERT INTO `lego_ad` VALUES ('5', '2', '0', '首页品牌馆广告4', '', '1395
 INSERT INTO `lego_ad` VALUES ('6', '2', '0', '首页品牌馆广告5', '', '1395102643056246082.jpg', '1395043200', '1650096000', '', '', '', '0', '1');
 INSERT INTO `lego_ad` VALUES ('7', '3', '0', '首页全宽行广告', '', '1395103879947831038.jpg', '1395043200', '1650096000', '', '', '', '0', '1');
 INSERT INTO `lego_ad` VALUES ('8', '4', '0', '首页商品分类内广告1', '', '1395165263409182523.jpg', '1395129600', '1650182400', '', '', '', '0', '1');
-INSERT INTO `lego_ad` VALUES ('9', '4', '0', '首页商品分类内广告2', '', '1395165318462292254.jpg', '1395129600', '1650182400', '', '', '', '0', '1');
+INSERT INTO `lego_ad` VALUES ('9', '4', '0', '首页商品分类内广告2', '', '1395165318462292254.jpg', '1395129600', '1650182400', '', '', '', '1', '1');
+INSERT INTO `lego_ad` VALUES ('10', '4', '0', '首页商品分类内广告3', '', '1395621905213961042.jpg', '1395561600', '1650614400', '', '', '', '3', '1');
 
 -- ----------------------------
 -- Table structure for `lego_admin_action`
@@ -212,7 +213,7 @@ CREATE TABLE `lego_admin_log` (
   PRIMARY KEY (`log_id`),
   KEY `log_time` (`log_time`),
   KEY `user_id` (`user_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=93 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=104 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of lego_admin_log
@@ -309,6 +310,17 @@ INSERT INTO `lego_admin_log` VALUES ('89', '1395448171', '1', '编辑商品分�
 INSERT INTO `lego_admin_log` VALUES ('90', '1395448400', '1', '添加商品: 52°泸州老窖永盛烧坊老窖专酿红装纪念版 500ml', '127.0.0.1');
 INSERT INTO `lego_admin_log` VALUES ('91', '1395448568', '1', '添加商品: 42°白云边十二年陈酿 500ml', '127.0.0.1');
 INSERT INTO `lego_admin_log` VALUES ('92', '1395448683', '1', '编辑品牌管理: 茅台', '127.0.0.1');
+INSERT INTO `lego_admin_log` VALUES ('93', '1395617056', '1', '添加商品: 40°百加得超级朗姆酒 750ml', '127.0.0.1');
+INSERT INTO `lego_admin_log` VALUES ('94', '1395617424', '1', '添加商品: 40°美国深蓝伏特加 750ml', '127.0.0.1');
+INSERT INTO `lego_admin_log` VALUES ('95', '1395617579', '1', '添加商品: 4.8°百加得冰锐朗姆预调酒蓝莓味 275ml', '127.0.0.1');
+INSERT INTO `lego_admin_log` VALUES ('96', '1395617648', '1', '添加商品: 40°芝华士12年苏格兰威士忌 700ml ', '127.0.0.1');
+INSERT INTO `lego_admin_log` VALUES ('97', '1395617729', '1', '添加商品: 40°轩尼诗VSOP干邑白兰地 700ml', '127.0.0.1');
+INSERT INTO `lego_admin_log` VALUES ('98', '1395617780', '1', '编辑商品分类: 洋酒', '127.0.0.1');
+INSERT INTO `lego_admin_log` VALUES ('99', '1395621905', '1', '添加广告: 首页商品分类内广告3', '127.0.0.1');
+INSERT INTO `lego_admin_log` VALUES ('100', '1395622052', '1', '添加商品: 40°美国杰克丹尼 700ml', '127.0.0.1');
+INSERT INTO `lego_admin_log` VALUES ('101', '1395622250', '1', '编辑广告: 首页商品分类内广告3', '127.0.0.1');
+INSERT INTO `lego_admin_log` VALUES ('102', '1395622266', '1', '编辑广告: 首页商品分类内广告3', '127.0.0.1');
+INSERT INTO `lego_admin_log` VALUES ('103', '1395622290', '1', '编辑广告: 首页商品分类内广告3', '127.0.0.1');
 
 -- ----------------------------
 -- Table structure for `lego_admin_message`
@@ -361,7 +373,7 @@ CREATE TABLE `lego_admin_user` (
 -- ----------------------------
 -- Records of lego_admin_user
 -- ----------------------------
-INSERT INTO `lego_admin_user` VALUES ('1', 'admin', 'admin@admin.com', '304f1497ec2037a1c8955a95a0f58539', '39', '1358236387', '1395437520', '127.0.0.1', 'all', '商品列表|goods.php?act=list,订单列表|order.php?act=list,用户评论|comment_manage.php?act=list,会员列表|users.php?act=list,商店设置|shop_config.php?act=list_edit', '', '0', '0', null, null);
+INSERT INTO `lego_admin_user` VALUES ('1', 'admin', 'admin@admin.com', '304f1497ec2037a1c8955a95a0f58539', '39', '1358236387', '1395616584', '127.0.0.1', 'all', '商品列表|goods.php?act=list,订单列表|order.php?act=list,用户评论|comment_manage.php?act=list,会员列表|users.php?act=list,商店设置|shop_config.php?act=list_edit', '', '0', '0', null, null);
 
 -- ----------------------------
 -- Table structure for `lego_adsense`
@@ -379,6 +391,8 @@ CREATE TABLE `lego_adsense` (
 -- ----------------------------
 INSERT INTO `lego_adsense` VALUES ('5', '本站', '1');
 INSERT INTO `lego_adsense` VALUES ('3', '本站', '1');
+INSERT INTO `lego_adsense` VALUES ('9', '本站', '1');
+INSERT INTO `lego_adsense` VALUES ('10', '本站', '3');
 
 -- ----------------------------
 -- Table structure for `lego_ad_custom`
@@ -742,7 +756,7 @@ CREATE TABLE `lego_brand` (
   `is_show` tinyint(1) unsigned NOT NULL DEFAULT '1',
   PRIMARY KEY (`brand_id`),
   KEY `is_show` (`is_show`)
-) ENGINE=MyISAM AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=14 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of lego_brand
@@ -755,6 +769,11 @@ INSERT INTO `lego_brand` VALUES ('5', '酱领', '', '', '', '50', '1');
 INSERT INTO `lego_brand` VALUES ('6', '杏花村', '', '', '', '50', '1');
 INSERT INTO `lego_brand` VALUES ('7', '泸州老窖', '', '', '', '50', '1');
 INSERT INTO `lego_brand` VALUES ('8', '白云边', '', '', '', '50', '1');
+INSERT INTO `lego_brand` VALUES ('9', '百加得', '', '', '', '50', '1');
+INSERT INTO `lego_brand` VALUES ('10', '深蓝', '', '', '', '50', '1');
+INSERT INTO `lego_brand` VALUES ('11', '芝华士', '', '', '', '50', '1');
+INSERT INTO `lego_brand` VALUES ('12', '轩尼诗', '', '', '', '50', '1');
+INSERT INTO `lego_brand` VALUES ('13', '杰克丹尼', '', '', '', '50', '1');
 
 -- ----------------------------
 -- Table structure for `lego_card`
@@ -833,7 +852,7 @@ CREATE TABLE `lego_category` (
 -- ----------------------------
 INSERT INTO `lego_category` VALUES ('1', '白酒', '', '', '0', '50', '', '', '0', '', '1', '0', '2,1,8');
 INSERT INTO `lego_category` VALUES ('2', '葡萄酒', '', '', '0', '50', '', '', '0', '', '1', '6', '5,4,3');
-INSERT INTO `lego_category` VALUES ('3', '洋酒', '', '', '0', '50', '', '', '0', '', '1', '0', '');
+INSERT INTO `lego_category` VALUES ('3', '洋酒', '', '', '0', '50', '', '', '0', '', '1', '0', '6,7');
 INSERT INTO `lego_category` VALUES ('4', '啤酒', '', '', '0', '50', '', '', '0', '', '1', '0', '');
 INSERT INTO `lego_category` VALUES ('5', '酒具', '', '', '0', '50', '', '', '0', '', '1', '0', '');
 
@@ -1196,7 +1215,7 @@ CREATE TABLE `lego_goods` (
   KEY `promote_start_date` (`promote_start_date`),
   KEY `goods_number` (`goods_number`),
   KEY `sort_order` (`sort_order`)
-) ENGINE=MyISAM AUTO_INCREMENT=12 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=18 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of lego_goods
@@ -1207,11 +1226,17 @@ INSERT INTO `lego_goods` VALUES ('3', '2', 'ble000003', '法国拉菲庄园法�
 INSERT INTO `lego_goods` VALUES ('4', '2', 'ble000004', '法国拉菲庄园法莱利金冠2010干红礼盒 750ml', '+', '2', '2', '', '0', '0.000', '688.00', '188.00', '0.00', '0', '0', '0', '法国 红色 干红', '', '', 'images/201403/thumb_img/4_thumb_G_1395440303705.jpg', 'images/201403/goods_img/4_G_1395440303567.jpg', 'images/201403/source_img/4_G_1395440303194.jpg', '1', '', '1', '1', '0', '0', '1395440303', '100', '0', '0', '0', '1', '0', '0', '1395446753', '2', '', '-1', '-1', '0', null);
 INSERT INTO `lego_goods` VALUES ('5', '2', 'ble000005', '法国拉菲庄园法莱利2011干红单支礼盒 750ml', '+strong', '2', '2', '', '0', '0.000', '560.00', '148.00', '0.00', '0', '0', '0', '法国 红色 干红', '', '', 'images/201403/thumb_img/5_thumb_G_1395444503051.jpg', 'images/201403/goods_img/5_G_1395444503616.jpg', 'images/201403/source_img/5_G_1395444503828.jpg', '1', '', '1', '1', '0', '0', '1395444503', '100', '0', '0', '1', '0', '0', '0', '1395446754', '2', '', '-1', '-1', '0', null);
 INSERT INTO `lego_goods` VALUES ('6', '2', 'ble000006', '中国张裕馆藏干红葡萄酒 750ml', '+', '0', '3', '', '0', '0.000', '118.00', '88.00', '0.00', '0', '0', '0', '中国 红色 干红', '', '', 'images/201403/thumb_img/6_thumb_G_1395444655866.jpg', 'images/201403/goods_img/6_G_1395444655173.jpg', 'images/201403/source_img/6_G_1395444655115.jpg', '1', '', '1', '1', '0', '0', '1395444655', '100', '0', '1', '0', '0', '0', '0', '1395446755', '2', '', '-1', '-1', '0', null);
-INSERT INTO `lego_goods` VALUES ('7', '1', 'ble000007', '52°茅台集团经典品位珍品 500ml ', '+', '1', '4', '', '0', '0.000', '598.00', '89.00', '0.00', '0', '0', '0', '贵州 浓香型', '', '', 'images/201403/thumb_img/7_thumb_G_1395447509246.jpg', 'images/201403/goods_img/7_G_1395447509159.jpg', 'images/201403/source_img/7_G_1395447509305.jpg', '1', '', '1', '1', '0', '0', '1395447509', '100', '0', '0', '0', '0', '0', '0', '1395447967', '1', '', '-1', '-1', '0', null);
-INSERT INTO `lego_goods` VALUES ('8', '1', 'ble000008', '53°酱领经典捆沙工艺健康酱香 500ml', '+', '1', '5', '', '0', '0.000', '369.00', '59.00', '0.00', '0', '0', '0', '贵州 酱香型', '', '', 'images/201403/thumb_img/8_thumb_G_1395447654997.jpg', 'images/201403/goods_img/8_G_1395447654713.jpg', 'images/201403/source_img/8_G_1395447654434.jpg', '1', '', '1', '1', '0', '0', '1395447654', '100', '0', '0', '0', '0', '0', '0', '1395447958', '1', '', '-1', '-1', '0', null);
-INSERT INTO `lego_goods` VALUES ('9', '1', 'ble000009', '53°汾酒集团20年陈酿（帝王黄）475ml ', '+', '2', '6', '', '0', '0.000', '558.00', '98.00', '0.00', '0', '0', '0', '山西 清香型', '', '', 'images/201403/thumb_img/9_thumb_G_1395447825176.jpg', 'images/201403/goods_img/9_G_1395447825817.jpg', 'images/201403/source_img/9_G_1395447825837.jpg', '1', '', '1', '1', '0', '0', '1395447825', '100', '0', '0', '0', '0', '0', '0', '1395447947', '1', '', '-1', '-1', '0', null);
+INSERT INTO `lego_goods` VALUES ('7', '1', 'ble000007', '52°茅台集团经典品位珍品 500ml ', '+', '1', '4', '', '0', '0.000', '598.00', '89.00', '0.00', '0', '0', '0', '贵州 浓香型', '', '', 'images/201403/thumb_img/7_thumb_G_1395447509246.jpg', 'images/201403/goods_img/7_G_1395447509159.jpg', 'images/201403/source_img/7_G_1395447509305.jpg', '1', '', '1', '1', '0', '0', '1395447509', '100', '0', '0', '0', '1', '0', '0', '1395622327', '1', '', '-1', '-1', '0', null);
+INSERT INTO `lego_goods` VALUES ('8', '1', 'ble000008', '53°酱领经典捆沙工艺健康酱香 500ml', '+', '1', '5', '', '0', '0.000', '369.00', '59.00', '0.00', '0', '0', '0', '贵州 酱香型', '', '', 'images/201403/thumb_img/8_thumb_G_1395447654997.jpg', 'images/201403/goods_img/8_G_1395447654713.jpg', 'images/201403/source_img/8_G_1395447654434.jpg', '1', '', '1', '1', '0', '0', '1395447654', '100', '0', '0', '1', '0', '0', '0', '1395622326', '1', '', '-1', '-1', '0', null);
+INSERT INTO `lego_goods` VALUES ('9', '1', 'ble000009', '53°汾酒集团20年陈酿（帝王黄）475ml ', '+', '2', '6', '', '0', '0.000', '558.00', '98.00', '0.00', '0', '0', '0', '山西 清香型', '', '', 'images/201403/thumb_img/9_thumb_G_1395447825176.jpg', 'images/201403/goods_img/9_G_1395447825817.jpg', 'images/201403/source_img/9_G_1395447825837.jpg', '1', '', '1', '1', '0', '0', '1395447825', '100', '0', '1', '0', '0', '0', '0', '1395622325', '1', '', '-1', '-1', '0', null);
 INSERT INTO `lego_goods` VALUES ('10', '1', 'ble000010', '52°泸州老窖永盛烧坊老窖专酿红装纪念版 500ml', '+', '0', '7', '', '0', '0.000', '599.00', '199.00', '0.00', '0', '0', '0', '四川 浓香型', '', '', 'images/201403/thumb_img/10_thumb_G_1395448400369.jpg', 'images/201403/goods_img/10_G_1395448400469.jpg', 'images/201403/source_img/10_G_1395448400706.jpg', '1', '', '1', '1', '0', '0', '1395448400', '100', '0', '0', '0', '0', '0', '0', '1395448400', '1', '', '-1', '-1', '0', null);
-INSERT INTO `lego_goods` VALUES ('11', '1', 'ble000011', '42°白云边十二年陈酿 500ml', '+', '1', '8', '', '0', '0.000', '178.00', '99.00', '0.00', '0', '0', '0', '湖北 其他', '', '', 'images/201403/thumb_img/11_thumb_G_1395448568881.jpg', 'images/201403/goods_img/11_G_1395448568534.jpg', 'images/201403/source_img/11_G_1395448568028.jpg', '1', '', '1', '1', '0', '0', '1395448568', '100', '0', '0', '0', '0', '0', '0', '1395448568', '1', '', '-1', '-1', '0', null);
+INSERT INTO `lego_goods` VALUES ('11', '1', 'ble000011', '42°白云边十二年陈酿 500ml', '+', '1', '8', '', '0', '0.000', '178.00', '99.00', '0.00', '0', '0', '0', '湖北 其他', '', '', 'images/201403/thumb_img/11_thumb_G_1395448568881.jpg', 'images/201403/goods_img/11_G_1395448568534.jpg', 'images/201403/source_img/11_G_1395448568028.jpg', '1', '', '1', '1', '0', '0', '1395448568', '100', '0', '0', '1', '0', '0', '0', '1395622325', '1', '', '-1', '-1', '0', null);
+INSERT INTO `lego_goods` VALUES ('12', '3', 'ble000012', '40°百加得超级朗姆酒 750ml', '+', '1', '9', '', '0', '0.000', '141.00', '69.00', '0.00', '0', '0', '0', '美国 朗姆酒', '', '', 'images/201403/thumb_img/12_thumb_G_1395617056053.jpg', 'images/201403/goods_img/12_G_1395617056938.jpg', 'images/201403/source_img/12_G_1395617056308.jpg', '1', '', '1', '1', '0', '0', '1395617056', '100', '0', '0', '0', '0', '0', '0', '1395617056', '3', '', '-1', '-1', '0', null);
+INSERT INTO `lego_goods` VALUES ('13', '3', 'ble000013', '40°美国深蓝伏特加 750ml', '+', '0', '10', '', '0', '0.000', '120.00', '59.00', '0.00', '0', '0', '0', '美国 伏特加', '', '', 'images/201403/thumb_img/13_thumb_G_1395617424080.jpg', 'images/201403/goods_img/13_G_1395617424444.jpg', 'images/201403/source_img/13_G_1395617424085.jpg', '1', '', '1', '1', '0', '0', '1395617424', '100', '0', '0', '0', '1', '0', '0', '1395622324', '3', '', '-1', '-1', '0', null);
+INSERT INTO `lego_goods` VALUES ('14', '3', 'ble000014', '4.8°百加得冰锐朗姆预调酒蓝莓味 275ml', '+', '0', '9', '', '0', '0.000', '16.00', '9.90', '0.00', '0', '0', '0', '美国 预调酒', '', '', 'images/201403/thumb_img/14_thumb_G_1395617579293.jpg', 'images/201403/goods_img/14_G_1395617579641.jpg', 'images/201403/source_img/14_G_1395617579889.jpg', '1', '', '1', '1', '0', '0', '1395617579', '100', '0', '0', '0', '0', '0', '0', '1395617579', '3', '', '-1', '-1', '0', null);
+INSERT INTO `lego_goods` VALUES ('15', '3', 'ble000015', '40°芝华士12年苏格兰威士忌 700ml ', '+', '0', '11', '', '0', '0.000', '308.00', '199.00', '0.00', '0', '0', '0', '英国 威士忌', '', '', 'images/201403/thumb_img/15_thumb_G_1395617648685.jpg', 'images/201403/goods_img/15_G_1395617648428.jpg', 'images/201403/source_img/15_G_1395617648627.jpg', '1', '', '1', '1', '0', '0', '1395617648', '100', '0', '0', '1', '0', '0', '0', '1395622323', '3', '', '-1', '-1', '0', null);
+INSERT INTO `lego_goods` VALUES ('16', '3', 'ble000016', '40°轩尼诗VSOP干邑白兰地 700ml', '+', '1', '12', '', '0', '0.000', '490.00', '315.00', '0.00', '0', '0', '0', '法国 白兰地', '', '', 'images/201403/thumb_img/16_thumb_G_1395617729945.jpg', 'images/201403/goods_img/16_G_1395617729480.jpg', 'images/201403/source_img/16_G_1395617729994.jpg', '1', '', '1', '1', '0', '0', '1395617729', '100', '0', '0', '0', '1', '0', '0', '1395622333', '3', '', '-1', '-1', '0', null);
+INSERT INTO `lego_goods` VALUES ('17', '3', 'ble000017', '40°美国杰克丹尼 700ml', '+', '3', '13', '', '0', '0.000', '218.00', '137.00', '0.00', '0', '0', '0', '美国 威士忌', '', '', 'images/201403/thumb_img/17_thumb_G_1395622052281.jpg', 'images/201403/goods_img/17_G_1395622052071.jpg', 'images/201403/source_img/17_G_1395622052388.jpg', '1', '', '1', '1', '0', '0', '1395622052', '100', '0', '1', '0', '0', '0', '0', '1395622322', '3', '', '-1', '-1', '0', null);
 
 -- ----------------------------
 -- Table structure for `lego_goods_activity`
@@ -1265,7 +1290,7 @@ CREATE TABLE `lego_goods_attr` (
   PRIMARY KEY (`goods_attr_id`),
   KEY `goods_id` (`goods_id`),
   KEY `attr_id` (`attr_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=34 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=46 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of lego_goods_attr
@@ -1303,6 +1328,18 @@ INSERT INTO `lego_goods_attr` VALUES ('30', '10', '8', '52', '0');
 INSERT INTO `lego_goods_attr` VALUES ('31', '11', '1', '湖北', '0');
 INSERT INTO `lego_goods_attr` VALUES ('32', '11', '2', '其他', '0');
 INSERT INTO `lego_goods_attr` VALUES ('33', '11', '8', '42', '0');
+INSERT INTO `lego_goods_attr` VALUES ('34', '12', '6', '美国', '0');
+INSERT INTO `lego_goods_attr` VALUES ('35', '12', '7', '朗姆酒', '0');
+INSERT INTO `lego_goods_attr` VALUES ('36', '13', '6', '美国', '0');
+INSERT INTO `lego_goods_attr` VALUES ('37', '13', '7', '伏特加', '0');
+INSERT INTO `lego_goods_attr` VALUES ('38', '14', '6', '美国', '0');
+INSERT INTO `lego_goods_attr` VALUES ('39', '14', '7', '预调酒', '0');
+INSERT INTO `lego_goods_attr` VALUES ('40', '15', '6', '英国', '0');
+INSERT INTO `lego_goods_attr` VALUES ('41', '15', '7', '威士忌', '0');
+INSERT INTO `lego_goods_attr` VALUES ('42', '16', '6', '法国', '0');
+INSERT INTO `lego_goods_attr` VALUES ('43', '16', '7', '白兰地', '0');
+INSERT INTO `lego_goods_attr` VALUES ('44', '17', '6', '美国', '0');
+INSERT INTO `lego_goods_attr` VALUES ('45', '17', '7', '威士忌', '0');
 
 -- ----------------------------
 -- Table structure for `lego_goods_cat`
@@ -1331,7 +1368,7 @@ CREATE TABLE `lego_goods_gallery` (
   `img_original` varchar(255) NOT NULL DEFAULT '',
   PRIMARY KEY (`img_id`),
   KEY `goods_id` (`goods_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=13 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=19 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of lego_goods_gallery
@@ -1347,6 +1384,12 @@ INSERT INTO `lego_goods_gallery` VALUES ('9', '8', 'images/201403/goods_img/8_P_
 INSERT INTO `lego_goods_gallery` VALUES ('10', '9', 'images/201403/goods_img/9_P_1395447825713.jpg', '', 'images/201403/thumb_img/9_thumb_P_1395447825690.jpg', 'images/201403/source_img/9_P_1395447825095.jpg');
 INSERT INTO `lego_goods_gallery` VALUES ('11', '10', 'images/201403/goods_img/10_P_1395448401842.jpg', '', 'images/201403/thumb_img/10_thumb_P_1395448401385.jpg', 'images/201403/source_img/10_P_1395448400622.jpg');
 INSERT INTO `lego_goods_gallery` VALUES ('12', '11', 'images/201403/goods_img/11_P_1395448569966.jpg', '', 'images/201403/thumb_img/11_thumb_P_1395448569809.jpg', 'images/201403/source_img/11_P_1395448568038.jpg');
+INSERT INTO `lego_goods_gallery` VALUES ('13', '12', 'images/201403/goods_img/12_P_1395617057894.jpg', '', 'images/201403/thumb_img/12_thumb_P_1395617057413.jpg', 'images/201403/source_img/12_P_1395617056955.jpg');
+INSERT INTO `lego_goods_gallery` VALUES ('14', '13', 'images/201403/goods_img/13_P_1395617424176.jpg', '', 'images/201403/thumb_img/13_thumb_P_1395617424634.jpg', 'images/201403/source_img/13_P_1395617424190.jpg');
+INSERT INTO `lego_goods_gallery` VALUES ('15', '14', 'images/201403/goods_img/14_P_1395617579413.jpg', '', 'images/201403/thumb_img/14_thumb_P_1395617579881.jpg', 'images/201403/source_img/14_P_1395617579661.jpg');
+INSERT INTO `lego_goods_gallery` VALUES ('16', '15', 'images/201403/goods_img/15_P_1395617648103.jpg', '', 'images/201403/thumb_img/15_thumb_P_1395617648903.jpg', 'images/201403/source_img/15_P_1395617648950.jpg');
+INSERT INTO `lego_goods_gallery` VALUES ('17', '16', 'images/201403/goods_img/16_P_1395617729607.jpg', '', 'images/201403/thumb_img/16_thumb_P_1395617729623.jpg', 'images/201403/source_img/16_P_1395617729114.jpg');
+INSERT INTO `lego_goods_gallery` VALUES ('18', '17', 'images/201403/goods_img/17_P_1395622052526.jpg', '', 'images/201403/thumb_img/17_thumb_P_1395622052452.jpg', 'images/201403/source_img/17_P_1395622052253.jpg');
 
 -- ----------------------------
 -- Table structure for `lego_goods_type`
@@ -5263,8 +5306,8 @@ CREATE TABLE `lego_sessions` (
 -- ----------------------------
 -- Records of lego_sessions
 -- ----------------------------
-INSERT INTO `lego_sessions` VALUES ('459695aaece2db7628c062a834cb6d16', '1395477664', '0', '0', '127.0.0.1', '0', '0', '1.00', '0', 'a:5:{s:7:\"from_ad\";i:0;s:7:\"referer\";s:6:\"本站\";s:10:\"login_fail\";i:0;s:12:\"captcha_word\";s:16:\"OWY1Y2EzN2JmOA==\";s:14:\"display_search\";s:4:\"grid\";}');
-INSERT INTO `lego_sessions` VALUES ('df036251e197ce6e2af90c44c06a6ca3', '1395477610', '0', '1', '127.0.0.1', '0', '0', '0.00', '0', 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1395448810;s:12:\"suppliers_id\";s:1:\"0\";}');
+INSERT INTO `lego_sessions` VALUES ('73a8703d9004be8af76f9322dff20646', '1395651157', '0', '0', '127.0.0.1', '0', '0', '1.00', '0', 'a:4:{s:7:\"from_ad\";i:10;s:7:\"referer\";s:6:\"本站\";s:10:\"login_fail\";i:0;s:12:\"captcha_word\";s:16:\"ZmI4YjIzNWFhYw==\";}');
+INSERT INTO `lego_sessions` VALUES ('5539a6b41bf634f343dd015d1c706af8', '1395651133', '0', '1', '127.0.0.1', '0', '0', '0.00', '0', 'a:4:{s:10:\"admin_name\";s:5:\"admin\";s:11:\"action_list\";s:3:\"all\";s:10:\"last_check\";i:1395622235;s:12:\"suppliers_id\";s:1:\"0\";}');
 
 -- ----------------------------
 -- Table structure for `lego_sessions_data`
@@ -5577,6 +5620,9 @@ INSERT INTO `lego_stats` VALUES ('1395361803', '127.0.0.1', '20', 'Safari 537.36
 INSERT INTO `lego_stats` VALUES ('1395425028', '127.0.0.1', '21', 'Safari 537.36', 'Windows XP', 'zh-CN,zh', 'LAN', '', '', '/9lego/9legoweb/index.php');
 INSERT INTO `lego_stats` VALUES ('1395437514', '127.0.0.1', '22', 'Safari 537.36', 'Windows XP', 'zh-CN,zh', 'LAN', '', '', '/9lego/9legoweb/index.php');
 INSERT INTO `lego_stats` VALUES ('1395444403', '127.0.0.1', '23', 'Safari 537.36', 'Windows XP', 'zh-CN,zh', 'LAN', 'http://www.hostshop.com', '/9lego/9legoweb/goods-3.html', '/9lego/9legoweb/index.php');
+INSERT INTO `lego_stats` VALUES ('1395451115', '127.0.0.1', '24', 'Safari 537.36', 'Windows XP', 'zh-CN,zh', 'LAN', '', '', '/9lego/9legoweb/index.php');
+INSERT INTO `lego_stats` VALUES ('1395616576', '127.0.0.1', '25', 'Safari 537.36', 'Windows XP', 'zh-CN,zh', 'LAN', '', '', '/9lego/9legoweb/index.php');
+INSERT INTO `lego_stats` VALUES ('1395621908', '127.0.0.1', '26', 'Safari 537.36', 'Windows XP', 'zh-CN,zh', 'LAN', 'http://www.hostshop.com', '/9lego/9legoweb/category-3-b0.html', '/9lego/9legoweb/index.php');
 
 -- ----------------------------
 -- Table structure for `lego_suppliers`
@@ -5656,20 +5702,21 @@ INSERT INTO `lego_template` VALUES ('category', '右边区域', '/library/pages.
 INSERT INTO `lego_template` VALUES ('category', '左边区域', '/library/cart.lbi', '0', '0', '0', '0', 'default', '');
 INSERT INTO `lego_template` VALUES ('category', '左边区域', '/library/price_grade.lbi', '3', '0', '0', '0', 'default', '');
 INSERT INTO `lego_template` VALUES ('category', '左边区域', '/library/filter_attr.lbi', '2', '0', '0', '0', 'default', '');
-INSERT INTO `lego_template` VALUES ('index', '首页分类下广告', '/library/ad_position.lbi', '0', '4', '2', '4', 'red_two', '');
+INSERT INTO `lego_template` VALUES ('index', '首页分类下广告', '/library/ad_position.lbi', '0', '4', '3', '4', 'red_two', '');
 INSERT INTO `lego_template` VALUES ('index', '全宽行', '/library/ad_position.lbi', '0', '3', '1', '4', 'red_two', '');
 INSERT INTO `lego_template` VALUES ('index', '品牌馆', '/library/ad_position.lbi', '0', '2', '5', '4', 'red_two', '');
 INSERT INTO `lego_template` VALUES ('index', '左边区域', '/library/ad_position.lbi', '0', '1', '1', '4', 'red_two', '');
-INSERT INTO `lego_template` VALUES ('index', '左边区域', '/library/cat_articles.lbi', '1', '4', '6', '3', 'red_two', '');
-INSERT INTO `lego_template` VALUES ('index', '', '/library/recommend_promotion.lbi', '0', '0', '4', '0', 'red_two', '');
-INSERT INTO `lego_template` VALUES ('index', '', '/library/group_buy.lbi', '0', '0', '3', '0', 'red_two', '');
 INSERT INTO `lego_template` VALUES ('index', '', '/library/auction.lbi', '0', '0', '3', '0', 'red_two', '');
 INSERT INTO `lego_template` VALUES ('index', '品牌馆', '/library/brands.lbi', '1', '0', '20', '0', 'red_two', '');
-INSERT INTO `lego_template` VALUES ('index', '全宽行', '/library/cat_goods.lbi', '2', '1', '5', '1', 'red_two', '');
 INSERT INTO `lego_template` VALUES ('index', '全宽行', '/library/cat_goods.lbi', '1', '2', '5', '1', 'red_two', '');
+INSERT INTO `lego_template` VALUES ('index', '全宽行', '/library/cat_goods.lbi', '2', '1', '5', '1', 'red_two', '');
+INSERT INTO `lego_template` VALUES ('index', '左边区域', '/library/cat_articles.lbi', '1', '4', '6', '3', 'red_two', '');
+INSERT INTO `lego_template` VALUES ('index', '全宽行', '/library/cat_goods.lbi', '3', '3', '5', '1', 'red_two', '');
+INSERT INTO `lego_template` VALUES ('index', '', '/library/recommend_promotion.lbi', '0', '0', '4', '0', 'red_two', '');
+INSERT INTO `lego_template` VALUES ('index', '', '/library/group_buy.lbi', '0', '0', '3', '0', 'red_two', '');
 INSERT INTO `lego_template` VALUES ('index', '右边区域', '/library/recommend_hot.lbi', '1', '0', '5', '0', 'red_two', '');
-INSERT INTO `lego_template` VALUES ('index', '右边区域', '/library/recommend_best.lbi', '0', '0', '5', '0', 'red_two', '');
 INSERT INTO `lego_template` VALUES ('index', '右边区域', '/library/recommend_new.lbi', '2', '0', '5', '0', 'red_two', '');
+INSERT INTO `lego_template` VALUES ('index', '右边区域', '/library/recommend_best.lbi', '0', '0', '5', '0', 'red_two', '');
 
 -- ----------------------------
 -- Table structure for `lego_topic`
