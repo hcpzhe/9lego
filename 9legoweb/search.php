@@ -439,6 +439,7 @@ else
         {
             $arr[$row['goods_id']]['goods_name'] = $row['goods_name'];
         }
+        $arr[$row['goods_id']]['name'] = $row['goods_name'];
         $arr[$row['goods_id']]['type']          = $row['goods_type'];
         $arr[$row['goods_id']]['market_price']  = price_format($row['market_price']);
         $arr[$row['goods_id']]['shop_price']    = price_format($row['shop_price']);
