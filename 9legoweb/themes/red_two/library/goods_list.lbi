@@ -36,6 +36,9 @@
 									<!--{/if}-->
 									<img style="border:none;" src="{$goods.goods_thumb}" alt="{$goods.name|escape:html}">
 								</a>
+								<!--{if !empty($goods.goods_brief)}-->
+								<div class="gl-abst-disc"><p>{$goods.goods_brief}</p></div>
+								<!--{/if}-->
 							</div>
 							<div class="gl-name-p">
 								<div class="gl-name"><a href="{$goods.url}" title="{$goods.name|escape:html}">{$goods.name|escape:html}</a></div>

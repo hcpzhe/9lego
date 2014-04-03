@@ -16,6 +16,9 @@
 									<b class="gl-water">新品</b>
 									<img style="border:none;" src="{$goods.thumb}" alt="{$goods.name|escape:html}">
 								</a>
+								<!--{if !empty($goods.brief)}-->
+								<div class="gl-abst-disc"><p>{$goods.brief}</p></div>
+								<!--{/if}-->
 							</div>
 							<div class="gl-name-p">
 								<div class="gl-name"><a href="{$goods.url}" title="{$goods.name|escape:html}">{$goods.name|escape:html}</a></div>
