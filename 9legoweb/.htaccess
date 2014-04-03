@@ -37,6 +37,8 @@ RewriteRule ^brand-([0-9]+)-c([0-9]+)-([0-9]+)(.*)\.html                brand\.p
 RewriteRule ^brand-([0-9]+)-c([0-9]+)(.*)\.html                         brand\.php\?id=$1&cat=$2 [QSA,L]
 RewriteRule ^brand-([0-9]+)(.*)\.html                                   brand\.php\?id=$1 [QSA,L]
 
+RewriteRule ^search-(.*)\.html                                             search\.php\?intro=$1 [QSA,L]
+
 RewriteRule ^tag-(.*)\.html                                             search\.php\?keywords=$1 [QSA,L]
 RewriteRule ^snatch-([0-9]+)\.html$                                     snatch\.php\?id=$1 [QSA,L]
 RewriteRule ^group_buy-([0-9]+)\.html$                                  group_buy\.php\?act=view&id=$1 [QSA,L]
