@@ -32,7 +32,15 @@
 				</li>
 			</ul>
 			<!-- 竖导航end -->
- 
- 
- 
- 
+<script type="text/javascript">
+	$(function($) {
+		$(".catetree-list li").hover(
+			function(){
+				$(this).addClass("current");
+			},
+			function(){
+				$(this).removeClass("current");
+			}
+		);
+	});
+</script>
