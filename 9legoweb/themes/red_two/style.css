@@ -2053,3 +2053,12 @@ opacity: 0.7;
 			.brand-box-dl dl dd {width: 240px;height: 140px;display: block;}
 				.brand-box-dl dl dd a {width: 100px;height: 50px;float: left;border-bottom: 1px solid #EBEBE8;border-right: 1px solid #EBEBE8;padding: 10px 9px 10px 10px;}
 					.brand-box-dl dl dd a span{width:100px;height:50px;position:absolute;z-index:10;top:10px;left:10px;background:#c63f4e;opacity:0.8;filter:Alpha(opacity=80);color:#fff;line-height:50px;text-align:center;}
+
+
+.crumbDone {background-position: 0px -90px!important;}
+.crumbCheckout {background-position: 0px -60px!important;}
+.crumbConsignee {background-position: 0px -30px!important;}
+#topLomoId {width: 960px;height: 29px;margin: 10px auto;background: url(images/crumbCart.png) no-repeat;text-indent: -999px;overflow: hidden;}
+
+
+

@@ -31,6 +31,7 @@
     var {$key} = "{$item}";
   {/foreach}
   </script>
+  <div class="crumbCart" id="topLomoId">购物车</div>
   <div class="flowBox">
     <h6><span>{$lang.goods_list}</span></h6>
         <form id="formCart" name="formCart" method="post" action="flow.php">
@@ -307,6 +308,7 @@
         <!-- {if $step eq "consignee"} -->
         <!-- 开始收货人信息填写界面 -->
 
+<div class="crumbConsignee" id="topLomoId">购物车</div>
         {insert_scripts files='region.js,utils.js'}
         <script type="text/javascript">
           region.isAdmin = false;
@@ -333,6 +335,7 @@
 
         <!-- {if $step eq "checkout"} 开始订单确认界面 -->
 
+<div class="crumbCheckout" id="topLomoId">购物车</div>
         <form action="flow.php" method="post" name="theForm" id="theForm" onsubmit="return checkOrderForm(this)">
         <script type="text/javascript">
         var flow_no_payment = "{$lang.flow_no_payment}";
@@ -659,6 +662,7 @@
         <!-- {if $step eq "done"} -->
         <!-- 订单提交成功 -->
 
+<div class="crumbDone" id="topLomoId">购物车</div>
         <div class="flowBox" style="margin:0 auto 70px auto;">
          <h6 style="text-align:center; height:30px; line-height:30px;">{$lang.remember_order_number}: <font style="color:red">{$order.order_sn}</font></h6>
           <table width="99%" align="center" border="0" cellpadding="15" cellspacing="0" bgcolor="#fff" style="border:1px solid #ddd; margin:20px auto;" >
