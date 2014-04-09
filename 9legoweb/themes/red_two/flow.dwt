@@ -431,7 +431,7 @@
       </div>
      <div class="blank"></div>
     <!--{if $total.real_goods_count neq 0}-->
-    <div class="flowBox">
+    <div class="flowBox rs_flow_ship">
     <h6><span>{$lang.shipping_method}</span></h6>
     <table width="99%" align="center" border="0" cellpadding="5" cellspacing="1" bgcolor="#dddddd" id="shippingTable">
             <tr>
@@ -461,6 +461,17 @@
           </table>
     </div>
     <div class="blank"></div>
+    <script type="text/javascript">
+    <!--
+    $(function($) {
+    	var $rsship = $(".rs_flow_ship input[name='shipping']");
+    	$rsship.first().click();
+    	if ($rsship.length == 1) {
+        	$(".rs_flow_ship").hide();
+    	}
+    });
+    -->
+    </script>
         <!--{else}-->
         <input name = "shipping" type="radio" value = "-1" checked="checked"  style="display:none"/>
         <!--{/if}-->
