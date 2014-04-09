@@ -19,7 +19,6 @@
 <body>
 <!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
 
-  <!-- #BeginLibraryItem "/library/ur_here.lbi" --><!-- #EndLibraryItem -->
 
 <div class="block clearfix">
   <!--left start-->
@@ -85,6 +84,7 @@ document.getElementById('history_list').innerHTML = '{$lang.no_history}';
   <!--right start-->
   <div class="AreaR">
 
+  <!-- #BeginLibraryItem "/library/ur_here_rs.lbi" --><!-- #EndLibraryItem -->
 	 <!--组合搜索 开始-->
 	  <!--{if $brands.1 || $price_grade.1 || $filter_attr_list}-->
 	  <div class="box">

@@ -1644,7 +1644,6 @@ opacity: 0.7;
 	text-align: center;
 	text-indent: 0;
 	line-height: 100%;
-	margin: 15px 0;
 	padding: 0;
 }
 .ft_pic_link {
@@ -2060,5 +2059,15 @@ opacity: 0.7;
 .crumbConsignee {background-position: 0px -30px!important;}
 #topLomoId {width: 960px;height: 29px;margin: 10px auto;background: url(images/crumbCart.png) no-repeat;text-indent: -999px;overflow: hidden;}
 
-
-
+.rs_footer p {margin: 15px 0;}
+.rs_footer_ex {padding: 28px 0 0 0;height: 80px;overflow: hidden;color: #666;}
+	.rs_footer_ex li {width: 142px;text-align: center;padding: 0px 29px;float: left;}
+		.rs_footer_ex li .pic {width: 38px;height: 36px;margin: 0 auto;background: url(images/rs_footer_icon.png) no-repeat;}
+		.rs_footer_ex li .ex_pic1 {background-position: 0 0;}
+		.rs_footer_ex li .ex_pic2 {background-position: -79px 0;}
+		.rs_footer_ex li .ex_pic3 {background-position: -157px 0;}
+		.rs_footer_ex li .ex_pic4 {background-position: -235px 0;}
+		.rs_footer_ex li .ex_pic5 {background-position: -313px 0;}
+		.rs_footer_ex li .ex_pic6 {background-position: -391px 0;}
+	.rs_footer_ex p {margin: 0;}
+.rs_footer_helps {}
