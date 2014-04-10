@@ -1,27 +1,50 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
-<!--
-<!--{if $helps}-->
-<div id="footerServiceLinkId">
-  <div class="ft_service_link clearfix">
-    <div class="ft_help_list clearfix" id="bottomHelpLinkId"> 
-      <!-- {foreach from=$helps item=help_cat name=foo} -->
-      <dl>
-        <dt><a href='{$help_cat.cat_id}' title="{$help_cat.cat_name}">{$help_cat.cat_name}</a></dt>
-        <!-- {foreach from=$help_cat.article item=item} -->
-        <dd><a href="{$item.url}" title="{$item.title|escape:html}">{$item.short_title}</a></dd>
-        <!-- {/foreach} -->
-      </dl>
-      <!-- {/foreach} --> 
-    </div>
-  </div>
-</div>
-<!--{/if}-->
--->
 
-<div id="footer">
-  <div class="ft_footer_service"> <a target="_blank" href="#"><span class="s1"></span>全场包邮</a> <a target="_blank" href="#"><span class="s2"></span>正品保障</a> <a target="_blank" href="#"><span class="s3"></span>售后无忧</a> </div>
-  <!--底部导航 start-->
+
+
+<div id="footer" class="rs_footer">
+<div class="sitewith rs_footer_ex">
+<ul><li><div class="pic ex_pic1"></div>
+<div class="ex_con"><strong>正品保障</strong><p>品牌厂商&nbsp;&nbsp;直接供货</p></div></li>
+<li><div class="pic ex_pic2"></div>
+<div class="ex_con"><strong>免运费</strong><p>一瓶起送&nbsp;&nbsp;免运费</p></div></li>
+<li><div class="pic ex_pic3"></div>
+<div class="ex_con"><strong>放心购</strong><p>洛阳市区内&nbsp;&nbsp;货到付款</p></div></li>
+<li><div class="pic ex_pic4"></div>
+<div class="ex_con"><strong>方便付款</strong><p>多种支付&nbsp;&nbsp;任您选择</p></div></li>
+<li><div class="pic ex_pic5"></div>
+<div class="ex_con"><strong>开箱验</strong><p>当场验货&nbsp;&nbsp;放心付款</p></div></li>
+<li><div class="pic ex_pic6"></div>
+<div class="ex_con"><strong>好服务</strong><p>7X24小时&nbsp;&nbsp;贴心服务</p></div></li></ul>
+<div class="cl"></div></div>
+
+<!--{if $helps}-->
+<div class="sitewith rs_fhwrap">
+<div class="rs_footer_helps">
+<ul>
+<!-- {foreach from=$helps item=help_cat name=foo} -->
+<li><h3><a href='{$help_cat.cat_id}' title="{$help_cat.cat_name}">{$help_cat.cat_name}</a></h3>
+<!-- {foreach from=$help_cat.article item=item} -->
+<p><a href="{$item.url}" title="{$item.title|escape:html}">{$item.short_title}</a></p>
+<!-- {/foreach} -->
+</li>
+<!-- {/foreach} --></ul>
+</div>
+<div class="rs_footer_weixin">
+	<img class="rs_f_wx_code" src="images/weixin.jpg" />
+	<div class="rs_f_wx_str">
+		<h3>酒乐go官方微信</h3>
+		<p>微信扫描二维码，随时随地与小也亲密接触，精彩活动，劲爆优惠触手可得！</p>
+	</div>
+</div>
+<div class="cl"></div>
+</div>
+
+
+<!--{/if}-->
+
+<!--底部导航 start-->
   <p class="ft_footer_link"> 
     <!-- {if $navigator_list} --> 
     <!-- {foreach name=nav_bottom_list from=$navigator_list.bottom item=nav} --> 

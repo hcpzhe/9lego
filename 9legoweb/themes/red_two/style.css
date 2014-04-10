@@ -1639,7 +1639,7 @@ opacity: 0.7;
 .ft_service_link dl dd a:hover {
 	color: #e60012;
 }
-#footer p {
+.rs_footer p {
 	color: #666;
 	text-align: center;
 	text-indent: 0;
@@ -2059,6 +2059,7 @@ opacity: 0.7;
 .crumbConsignee {background-position: 0px -30px!important;}
 #topLomoId {width: 960px;height: 29px;margin: 10px auto;background: url(images/crumbCart.png) no-repeat;text-indent: -999px;overflow: hidden;}
 
+
 .rs_footer p {margin: 15px 0;}
 .rs_footer_ex {padding: 28px 0 0 0;height: 80px;overflow: hidden;color: #666;}
 	.rs_footer_ex li {width: 142px;text-align: center;padding: 0px 29px;float: left;}
@@ -2070,4 +2071,17 @@ opacity: 0.7;
 		.rs_footer_ex li .ex_pic5 {background-position: -313px 0;}
 		.rs_footer_ex li .ex_pic6 {background-position: -391px 0;}
 	.rs_footer_ex p {margin: 0;}
-.rs_footer_helps {}
+
+.rs_fhwrap {margin-top: 15px;}
+	.rs_footer_helps {height: 100px;overflow: hidden; float:left;width:800px;}
+		.rs_footer_helps li {width: 125px;padding: 0 10px 0 65px;text-align: left;float: left;}
+		.rs_fhwrap h3 {line-height: 25px;font-size: 14px;text-align: left;height:auto;background: none;padding:0;}
+		.rs_footer_helps p {line-height: 25px;padding-left: 2px;padding:0;margin:0;text-align: left;height: 25px;overflow: hidden;}
+			.rs_footer_helps p a {color:#666;}
+	.rs_footer_weixin {float:left;width:400px;}
+		.rs_f_wx_code {width:115px;height: 115px; margin-top: -15px;float:left;}
+		.rs_f_wx_str {padding-left: 135px;}
+			.rs_f_wx_str p {line-height: 25px;padding-left: 2px;padding:0;margin:0;text-align: left;height: 25px;}
+
+
+
