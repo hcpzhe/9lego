@@ -779,6 +779,7 @@ function assign_cat_goods($cat_id, $num = 0, $from = 'web', $order_rule = '')
         }
         else
         {
+        	$promote_price = 0;
             $goods[$idx]['promote_price'] = '';
         }
 		/*******计算折扣率************************************************************************/
