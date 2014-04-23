@@ -311,6 +311,11 @@ function brand_get_goods($brand_id, $cate, $size, $page, $sort, $order)
         {
             $arr[$row['goods_id']]['goods_name']       = $row['goods_name'];
         }
+		/*******计算折扣率************************************************************************/
+		$tmp_p = $promote_price > 0 ? $promote_price : $row['shop_price'];
+		@$arr[$row['goods_id']]['discount_rate'] = floor($tmp_p*100/$row['market_price'])/10;
+		/****************************************************************************************/
+		
         $arr[$row['goods_id']]['name'] = $row['goods_name'];
         $arr[$row['goods_id']]['market_price']  = price_format($row['market_price']);
         $arr[$row['goods_id']]['shop_price']    = price_format($row['shop_price']);
