@@ -211,7 +211,6 @@
 	<div class="sitewith fullbox box-border">
 		<div class="box-tit brand-tit">
 			<h2>品牌馆</h2>
-			<div class="fr"><a href="../brand.php">查看更多&nbsp;&gt;&gt;</a></div>
 		</div>
 		<div class="brand-box-dl" id="brandWall">
 		<!-- TemplateBeginEditable name="品牌馆" -->
