@@ -23,7 +23,6 @@
   </h3>
 
 
-    <!-- {if $category > 0} -->
 				<div class="clearfix goodsBox" style="border:none; padding:18px 0 10px 0px;">
 					<ul class="goodslist-cate">
 						<!--{foreach from=$goods_list item=goods}-->
@@ -59,7 +58,6 @@
 					</ul>
 				</div>
 
-  <!-- {/if} -->
 
 
 

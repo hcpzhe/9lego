@@ -311,6 +311,7 @@ function brand_get_goods($brand_id, $cate, $size, $page, $sort, $order)
         {
             $arr[$row['goods_id']]['goods_name']       = $row['goods_name'];
         }
+        $arr[$row['goods_id']]['name'] = $row['goods_name'];
         $arr[$row['goods_id']]['market_price']  = price_format($row['market_price']);
         $arr[$row['goods_id']]['shop_price']    = price_format($row['shop_price']);
         $arr[$row['goods_id']]['promote_price'] = ($promote_price > 0) ? price_format($promote_price) : '';
