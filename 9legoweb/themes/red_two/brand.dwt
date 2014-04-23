@@ -16,7 +16,6 @@
 <body>
 <!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
 
-  <!-- #BeginLibraryItem "/library/ur_here.lbi" --><!-- #EndLibraryItem -->
 
 
 <div class="block clearfix">
@@ -52,6 +51,7 @@
   <!--left end-->
   <!--right start-->
   <div class="AreaR">
+  <!-- #BeginLibraryItem "/library/ur_here_rs.lbi" --><!-- #EndLibraryItem -->
     <div class="box">
      <div class="box_1">
       <h3><span>{$brand.brand_name}</span></h3>
@@ -65,7 +65,7 @@
             <!-- {/if} -->
           </div>
           </td>
-          <td bgcolor="#ffffff">
+          <td bgcolor="#ffffff" style="padding-left: 50px;">
           {$brand.brand_desc|nl2br}<br />
             <!-- {if $brand.site_url} -->
             {$lang.official_site} <a href="{$brand.site_url}" target="_blank" class="f6">{$brand.site_url}</a><br />

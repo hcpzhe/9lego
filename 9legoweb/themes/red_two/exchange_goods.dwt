@@ -53,7 +53,6 @@ function reg(str)
 <body>
 <!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
 
-    <!-- #BeginLibraryItem "/library/ur_here.lbi" --><!-- #EndLibraryItem -->
 
 
 <div class="block clearfix">
@@ -71,6 +70,8 @@ function reg(str)
 
   <!--right start-->
   <div class="AreaR">
+  
+    <!-- #BeginLibraryItem "/library/ur_here_rs.lbi" --><!-- #EndLibraryItem -->
     <!--商品详情start-->
     <div id="goodsInfo" class="clearfix">
       <!--商品图片和相册 start-->

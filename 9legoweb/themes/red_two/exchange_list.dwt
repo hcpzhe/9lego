@@ -16,7 +16,6 @@
 </head>
 <body>
 <!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
-  <!-- #BeginLibraryItem "/library/ur_here.lbi" --><!-- #EndLibraryItem -->
 
 <div class="block clearfix">
   <!--left start-->
@@ -36,6 +35,7 @@
 
   <!--right start-->
   <div class="AreaR">
+  <!-- #BeginLibraryItem "/library/ur_here_rs.lbi" --><!-- #EndLibraryItem -->
     <!-- TemplateBeginEditable name="右边区域" -->
     <!-- #BeginLibraryItem "/library/exchange_hot.lbi" --><!-- #EndLibraryItem -->
     <!-- #BeginLibraryItem "/library/exchange_list.lbi" --><!-- #EndLibraryItem -->

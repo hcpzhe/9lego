@@ -15,7 +15,6 @@
 </head>
 <body>
 <!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
-  <!-- #BeginLibraryItem "/library/ur_here.lbi" --><!-- #EndLibraryItem -->
 <div class="block clearfix">
   <!--left start-->
   <div class="AreaL">
@@ -31,6 +30,8 @@
   <!--left end-->
   <!--right start-->
   <div class="AreaR">
+  
+  <!-- #BeginLibraryItem "/library/ur_here_rs.lbi" --><!-- #EndLibraryItem -->
   <!-- {if $action eq "form"} -->
   <!--  搜索的表单 -->
   <div class="box">
