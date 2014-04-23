@@ -691,6 +691,43 @@ function get_brands($cat = 0, $app = 'brand')
 }
 
 /**
+ * 获得所有品牌
+ *
+ * @access  public
+ * @param   int     $cat
+ * @return  array
+ */
+function get_all_brands($app = 'brand')
+{
+    global $page_libs;
+    $template = basename(PHP_SELF);
+    $template = substr($template, 0, strrpos($template, '.'));
+    include_once(ROOT_PATH . ADMIN_PATH . '/includes/lib_template.php');
+    static $static_page_libs = null;
+    if ($static_page_libs == null)
+    {
+            $static_page_libs = $page_libs;
+    }
+
+    $sql = "SELECT brand_id, brand_name,brand_logo,brand_desc,IF(brand_logo > '', '1', '0') AS tag ".
+    		 'FROM ' . $GLOBALS['ecs']->table('brand') . ' ORDER BY tag DESC,sort_order ASC';
+    if (isset($static_page_libs[$template]['/library/brands.lbi']))
+    {
+        $num = get_library_number("brands");
+        $sql .= " LIMIT $num ";
+    }
+    $row = $GLOBALS['db']->getAll($sql);
+
+    foreach ($row AS $key => $val)
+    {
+        $row[$key]['url'] = build_uri($app, array('cid' => 0, 'bid' => $val['brand_id']), $val['brand_name']);
+        $row[$key]['brand_desc'] = htmlspecialchars($val['brand_desc'],ENT_QUOTES);
+    }
+
+    return $row;
+}
+
+/**
  *  所有的促销活动信息
  *
  * @access  public
