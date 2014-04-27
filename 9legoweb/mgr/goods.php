@@ -974,7 +974,7 @@ elseif ($_REQUEST['act'] == 'insert' || $_REQUEST['act'] == 'update')
         {
             foreach ($_POST['attr_id_list'] AS $key => $attr_id)
             {
-                $attr_value = $_POST['attr_value_list'][$key];
+                $attr_value = trim($_POST['attr_value_list'][$key]);
                 $attr_price = $_POST['attr_price_list'][$key];
                 if (!empty($attr_value))
                 {
