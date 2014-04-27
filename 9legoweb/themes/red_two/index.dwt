@@ -30,7 +30,6 @@
 	</div>
 </div>
 
-
 <div class="wrap">
 	<div class="sitewith">
 		<div class="idxmid-left">
@@ -63,16 +62,21 @@
 
  <!-- #EndLibraryItem -->
 <!-- TemplateEndEditable -->
+			<!-- {if $rand_sold_list} -->
 			<div class="left-box box-border mt8">
 				<div class="left-box-tit">
 					<h2>发货订单</h2>
 				</div>
-				<div class="left-box-dl">
-					<ul id="orderQueue">
-						<li><a href="goods-394.html">意大利进口创意钻石设计炫彩玻璃杯（中号）</a></li><li>吴** (139****1811) &nbsp;&nbsp;2014-01-18 </li><li><a href="goods-177.html">泸州老窖 52°蓝花瓷头曲升级版 500ml</a></li><li><a href="goods-145.html">郎酒 53°老郎酒1956 500ml</a></li><li>** (158****0240) &nbsp;&nbsp;2014-01-18 </li><li><a href="goods-353.html">燕京啤酒 8°p 330ml（6听装）</a></li><li>** (158****0240) &nbsp;&nbsp;2014-01-18 </li><li><a href="goods-300.html">波福特美乐 高档干红葡萄酒 (33 BEAU...</a></li><li>汤** (137****2751) &nbsp;&nbsp;2014-01-18 </li><li><a href="goods-187.html">古井贡 50°古井礼品酒浓香型 500ml ...</a></li><li>刘** (150****0939) &nbsp;&nbsp;2014-01-18 </li><li><a href="goods-231.html">汾酒 45°竹叶青汾酒 475ml</a></li><li><a href="goods-445.html">汾酒 优级（玻璃瓶）</a></li><li>顾** (189****3902) &nbsp;&nbsp;2014-01-18 </li><li><a href="goods-408.html">地球庄园精选霞多丽干白葡萄酒(Mundo I...</a></li><li>** (158****0240) &nbsp;&nbsp;2014-01-18 </li><li><a href="goods-300.html">波福特美乐 高档干红葡萄酒 (33 BEAU...</a></li><li><a href="goods-388.html">高档海马刀 葡萄酒多功能开瓶器</a></li><li>珈** (158****1921) &nbsp;&nbsp;2014-01-18 </li><li><a href="goods-301.html">玛歌圣玛丽 富奈隆红葡萄酒 (Chateau...</a></li><li>** (158****0240) &nbsp;&nbsp;2014-01-18 </li><li><a href="goods-133.html">郎酒 52°国藏郎酒（红铁郎） 500ml</a></li><li>陈** (138****0658) &nbsp;&nbsp;2014-01-18 </li><li><a href="goods-406.html">洛御杜康酒 洛阳杜康出品 52度浓香型白酒买...</a></li><li><a href="goods-406.html">洛御杜康酒 洛阳杜康出品 52度浓香型白酒买...</a></li><li><a href="goods-309.html">塔妮 塞古庄园干红葡萄酒(Roc de Se...</a></li><li><a href="goods-456.html">精致不锈钢酒壶（扁款随身携带）</a></li><li><a href="goods-474.html">国画艺术一壶四杯瓷器套（景德镇产）</a></li><li>李** (186****5220) &nbsp;&nbsp;2014-01-18 </li><li><a href="goods-309.html">塔妮 塞古庄园干红葡萄酒(Roc de Se...</a></li><li>贺** (135****2992) &nbsp;&nbsp;2014-01-18 </li><li><a href="goods-300.html">波福特美乐 高档干红葡萄酒 (33 BEAU...</a></li><li>郑** (158****3593) &nbsp;&nbsp;2014-01-18 </li><li><a href="goods-309.html">塔妮 塞古庄园干红葡萄酒(Roc de Se...</a></li><li>王** (133****6869) &nbsp;&nbsp;2014-01-18 </li><li><a href="goods-406.html">洛御杜康酒 洛阳杜康出品 52度浓香型白酒买...</a></li><li><a href="goods-406.html">洛御杜康酒 洛阳杜康出品 52度浓香型白酒买...</a></li><li>张** (137****3406) &nbsp;&nbsp;2014-01-18 </li><li><a href="goods-124.html">百年张裕干红葡萄酒 精选级（礼盒圆桶装）</a></li><li>郑** (133****7891) &nbsp;&nbsp;2014-01-18 </li><li><a href="goods-177.html">泸州老窖 52°蓝花瓷头曲升级版 500ml</a></li><li>党** (189****8362) &nbsp;&nbsp;2014-01-18 </li><li><a href="goods-402.html">德国阿科博 塞顿黑啤500ml 4听一组</a></li><li>绝** (138****8131) &nbsp;&nbsp;2014-01-18 </li><li><a href="goods-300.html">波福特美乐 高档干红葡萄酒 (33 BEAU...</a></li><li>孙** (158****6882) &nbsp;&nbsp;2014-01-18 </li><li><a href="goods-300.html">波福特美乐 高档干红葡萄酒 (33 BEAU...</a></li><li>吴** (139****1811) &nbsp;&nbsp;2014-01-18 </li>
+				<div class="left-box-dl" id="orderQueue_div">
+					<ul>
+					<!-- {foreach from=$rand_sold_list item=rsorder} -->
+						<li><a href="{$rsorder.url}">{$rsorder.goods_name}</a></li>
+						<li>{$rsorder.buyer}** ({$rsorder.phone}) &nbsp;&nbsp;{$rand_sold_date} </li>
+					<!-- {/foreach} -->
 					</ul>
 				</div>
 			</div>
+			<!-- {/if} -->
 		</div>
 		<div class="idxmid-right">
 		<!-- TemplateBeginEditable name="右边区域" -->
@@ -391,6 +395,7 @@
  <!-- #EndLibraryItem -->
 <!-- TemplateEndEditable -->
 </div>
+<script type="text/javascript" src="js/marquee.js"></script>
 {literal}
 <script type="text/javascript">
 <!--
@@ -399,6 +404,11 @@ $(function($) {
 	$(".JQ_cat_ad").each(function(i){
 		$(this).html($JQ_cat_ad_data.eq(i).html());
 	});
+	
+	$("#orderQueue_div").scrollbox({
+		switchItems:2
+	});
+	
 });
 -->
 </script>

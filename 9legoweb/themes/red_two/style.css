@@ -1984,7 +1984,7 @@ opacity: 0.7;
 				.catetree-list li h3 a {color:#fff;}	
 				.catetree-list li h3 span {width: 18px;font-weight: 500;font-size: 12px;float: right;font-family: "新宋体";}
 			.catetree-list li p {clear: both; margin: 8px auto; width: 180px; overflow: hidden;}
-				.catetree-list li p a {padding: 0 5px;}
+				.catetree-list li p a {padding: 0 4px;}
 	.idxban-right {float: right; width: 992px; margin-top:-1px;}
 	@-moz-document url-prefix(){.idxban-right {margin-top:-1px;}}
 
@@ -1996,8 +1996,8 @@ opacity: 0.7;
 .noticbox {height: 156px; padding: 5px 10px; line-height: 20px; width: 188px; letter-spacing: 2px; overflow: hidden; background: #fff;}
 .idx-newslist {height: 156px;}
 	.idx-newslist li {height: 26px;line-height: 26px;width: 188px; overflow: hidden;}
-#orderQueue {height: 350px; overflow: hidden; color: #89DD61;}
-	#orderQueue li {height: 25px;line-height: 25px;width: 188px; overflow: hidden;}
+#orderQueue_div {height:350px;overflow: hidden;color: #89DD61;}
+	#orderQueue_div li {height: 25px;line-height: 25px;width: 188px; overflow: hidden;}
 .left-box {width: 208px; background: #fff;}
 	.left-box-tit, .box-tit {height: 28px; line-height: 28px; background: #efefef; padding: 0 8px; border-bottom: #ddd 1px solid;}
 		.left-box-tit h2, .box-tit h2 {float: left; font-size: 14px; }

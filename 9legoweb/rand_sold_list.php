@@ -17,6 +17,10 @@ shuffle($name_arr);
 
 $name_rand_keys = array_rand($name_arr,$list_num);
 
+
+$phone_arr = array(130,131,132,133,134,135,136,137,138,139,150,151,152,153,155,156,157,158,159,186,187,188,189);
+shuffle($phone_arr);
+
 $sql = 'SELECT g.goods_id, g.shop_price, g.goods_name, g.goods_name_style ' .
 	' FROM ' . $GLOBALS['ecs']->table('goods') . ' AS g ' .
 	' WHERE g.is_on_sale = 1 AND g.is_alone_sale = 1 AND g.is_delete = 0 AND (g.is_best = 1 OR g.is_new =1 OR g.is_hot = 1)';
@@ -30,17 +34,23 @@ $goods_res2 = $db->getAll($sql2);
 $goods_res = array_merge($goods_res , $goods_res , $goods_res , $goods_res2);
 
 shuffle($goods_res);
+$goods_nums = count($goods_res);
+if ($goods_nums < $list_num) $list_num = $goods_nums;
 $goods_rand_keys = array_rand($goods_res,$list_num);
 
 $color_arr = array('#f8e2ac','#f5f5f5','#ffe6ec');
 $rand_sold_list = array();
 for ($i = 0; $i < $list_num; $i++) {
 	$rand_sold_list[$i] = $goods_res[$goods_rand_keys[$i]];
+	$rand_sold_list[$i]['goods_name'] = $goods_res[$goods_rand_keys[$i]]['goods_name'];
 	$rand_sold_list[$i]['short_name']   = $_CFG['goods_name_length'] > 0 ?
                                                sub_str($goods_res[$goods_rand_keys[$i]]['goods_name'], $_CFG['goods_name_length']) : $goods_res[$goods_rand_keys[$i]]['goods_name'];
     $rand_sold_list[$i]['short_style_name']   = add_style($rand_sold_list[$i]['short_name'],$goods_res[$goods_rand_keys[$i]]['goods_name_style']);
 	$rand_sold_list[$i]['url'] = build_uri('goods', array('gid' => $goods_res[$goods_rand_keys[$i]]['goods_id']), $goods_res[$goods_rand_keys[$i]]['goods_name']);
-	$rand_sold_list[$i]['buyer'] = $name_arr[$name_rand_keys[$i]] . '先生';
+	$rand_sold_list[$i]['buyer'] = $name_arr[$name_rand_keys[$i]];
 	$rand_sold_list[$i]['color'] = $color_arr[($i % 3)];
+	$rand_sold_list[$i]['phone'] = $phone_arr[0].'****'.rand(1112,9998);
+	shuffle($phone_arr);
 }
 $smarty->assign('rand_sold_list', $rand_sold_list);
+$smarty->assign('rand_sold_date', date("Y-m-d"));
