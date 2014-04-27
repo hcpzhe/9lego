@@ -16,7 +16,7 @@
 <li><div class="pic ex_pic5"></div>
 <div class="ex_con"><strong>开箱验</strong><p>当场验货&nbsp;&nbsp;放心付款</p></div></li>
 <li><div class="pic ex_pic6"></div>
-<div class="ex_con"><strong>好服务</strong><p>7X24小时&nbsp;&nbsp;贴心服务</p></div></li></ul>
+<div class="ex_con"><strong>好服务</strong><p>20分钟&nbsp;&nbsp;限时送货</p></div></li></ul>
 <div class="cl"></div></div>
 
 <!--{if $helps}-->
@@ -72,7 +72,7 @@
     <!-- 结束邮件{/if} --></p>
   <p> <!-- QQ 号码 {foreach from=$qq item=im} --> 
     <!-- {if $im} --> 
-    <a href="http://wpa.qq.com/msgrd?V=1&amp;Uin={$im}&amp;Site={$shop_name}&amp;Menu=yes" target="_blank"><img src="http://wpa.qq.com/pa?p=1:{$im}:4" height="16" border="0" alt="QQ" /> {$im}</a> 
+    <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin={$im}&amp;site={$shop_name}&amp;menu=yes"><img border="0" src="http://wpa.qq.com/pa?p=2:{$im}:50" alt="点击这里给我发消息" title="点击这里给我发消息"> {$im}</a>
     <!-- {/if} --> 
     <!-- {/foreach} 结束QQ号码 --> 
     <!-- 淘宝旺旺 {foreach from=$ww item=im} --> 
