@@ -2084,4 +2084,11 @@ opacity: 0.7;
 			.rs_f_wx_str p {line-height: 25px;padding-left: 2px;padding:0;margin:0;text-align: left;height: 25px;}
 
 
-
+/*******************************QQ浮窗*****************************/
+#rk_kfbox {width: 110px; position: fixed; right: 0; bottom:400px; z-index: 10000;font-size: 12px;overflow: hidden;text-align: center;}
+#rk_kfbox_top {width: 110px; height: auto; margin: 0; padding: 0; position: relative;}
+#rk_kfbox_close {width: 30px;height: 40px;position: absolute;top: 0px;right: 0px;cursor: pointer;overflow: hidden;text-align: right;}
+#rk_kfbox_main {background: url('images/rk_kfbox_middle.gif') repeat-y;}
+.rk_kfbox_li {padding: 4px 0 4px 8px; text-align: left;}
+.rk_kfbox_li img {padding-right: 8px;}
+/******************************************************************/
