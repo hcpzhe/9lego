@@ -338,7 +338,7 @@ elseif ($_REQUEST['step'] == 'consignee')
             }
             else
             {
-                $consignee_list[] = array('country' => $_CFG['shop_country']);
+                $consignee_list[] = array('country' => $_CFG['shop_country'],'province'=>$_CFG['shop_province'],'city'=>$_CFG['shop_city']);
             }
         }
         $smarty->assign('name_of_region',   array($_CFG['name_of_region_1'], $_CFG['name_of_region_2'], $_CFG['name_of_region_3'], $_CFG['name_of_region_4']));
