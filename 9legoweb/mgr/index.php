@@ -1074,9 +1074,9 @@ elseif ($_REQUEST['act'] == 'check_order')
 {
     if (empty($_SESSION['last_check']))
     {
-        $_SESSION['last_check'] = gmtime();
+        $_SESSION['last_check'] = 1;
 
-        make_json_result('', '', array('new_orders' => 0, 'new_paid' => 0));
+        //make_json_result('', '', array('new_orders' => 0, 'new_paid' => 0));
     }
 
     /* 新订单 */

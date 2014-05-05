@@ -1,14 +1,14 @@
 /* $Id : common.js 4824 2007-01-31 08:23:56Z paulgao $ */
 
 /* 检查新订单的时间间隔 */
-var NEW_ORDER_INTERVAL = 180000;
+var NEW_ORDER_INTERVAL = 120000;
 
 /* *
  * 开始检查新订单；
  */
 function startCheckOrder()
 {
-  checkOrder()
+  checkOrder();
   window.setInterval("checkOrder()", NEW_ORDER_INTERVAL);
 }
 
@@ -17,10 +17,10 @@ function startCheckOrder()
  */
 function checkOrder()
 {
-  var lastCheckOrder = new Date(document.getCookie('ECS_LastCheckOrder'));
+	var lastCheckOrderStr = document.getCookie('ECS_LastCheckOrder');
+  var lastCheckOrder = new Date(lastCheckOrderStr);
   var today = new Date();
-
-  if (lastCheckOrder == null || today-lastCheckOrder >= NEW_ORDER_INTERVAL)
+  if (lastCheckOrderStr == null || today-lastCheckOrder >= NEW_ORDER_INTERVAL)
   {
     document.setCookie('ECS_LastCheckOrder', today.toGMTString());
 
