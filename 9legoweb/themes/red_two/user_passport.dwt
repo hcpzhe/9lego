@@ -63,10 +63,7 @@
     </form>
     <div class="blank"></div>
   </div>
-  
-  <div class="usTxt">
-  <!-- #BeginLibraryItem "/library/goto_ecmoban.lbi" --><!-- #EndLibraryItem -->
-   </div>
+
 </div>
 <!--{/if}-->
 <!--#登录界面 end-->
@@ -190,9 +187,6 @@
     </form>
   <div class="blank"></div>
   </div>
-  <div class="usTxt">
-   <!-- #BeginLibraryItem "/library/goto_ecmoban.lbi" --><!-- #EndLibraryItem -->
-   </div>
 </div>
 <!--{/if}-->
 <!--{/if}-->
